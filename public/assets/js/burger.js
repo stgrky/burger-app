@@ -52,7 +52,7 @@ $(function() {
       type: "DELETE"
     }).then(
       function() {
-        console.log("deleted buirger", id);
+        console.log("deleted burger", id);
         // Reload the page to get the updated list
         location.reload();
       }
