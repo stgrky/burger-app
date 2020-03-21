@@ -1,14 +1,11 @@
 <li>
-
 	{{name}}
-		{{#if devour}}
-	<button class="delete-burger" data-id="{{this.id}}">SILENCE BURGER!</button>
 
-		{{else}}
 	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-		GOBBLE *gross grunts and gobble noises*!
+		{{#if devour}}THIS BURGER GOOD{{else}}GOBBLE GOBBLE{{/if}}
 	</button>
-		
-			{{/if}}
+
+
+	<button class="delete-burger" data-id="{{this.id}}">MEH!</button>
 
 </li>
