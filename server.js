@@ -4,10 +4,10 @@ var PORT = process.env.PORT || 3002;
 
 var app = express();
 //simple lgger middleware
-app.use("*", (req, res, next) => {
-  console.log(req.url)
-  next()
-})
+// app.use("*", (req, res, next) => {
+//   console.log(req.url)
+//   next()
+// })
 // Serve static content for the app from the "public" directory in the application directory.
 
 app.use(express.static("public"));
